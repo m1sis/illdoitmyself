@@ -1,59 +1,116 @@
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Responsive Image and Div Example</title>
-  <style>
-    .container {
-      display: flex;
-      justify-content: center, space-between;
-      align-items: top; /* stretch the items to the full height of the container */
-      height: 100%;
-    
-    }
-    
-    
-    .left {
-      min-width: auto;
-      height: 100%;
-      padding: 14px;
-    }
-    .right {
-      width: 45%;
-      height: 92%;
-      border: 1px solid black;
-      padding: 14px;
-      margin-top: 10px;
-      overflow: auto;
-      
-    }
-    img {
-      min-width: auto;
-      height: 100%;
-      
-    }
-    @media (max-width: 768px) {
+  <head>
+    <meta charset="UTF-8">
+    <title>Responsive Image and Div Example</title>
+    <style>
+      body {
+        background-color: #7d7d7d;
+
+      }
+
       .container {
+        display: flex;
+        justify-content: center, space-between;
+        align-items: center, bottom;
+        /* stretch the items to the full height of the container */
+        max-height: 80%;
+
+        max-width: 90%;
+
+
+
+
+      }
+
+
+      .left {
+        padding: 14px;
+        min-width: 55%;
+
+
+      }
+
+      .right {
+max-width: 100%;
+        border: 1px solid black;
+        padding: 14px;
+        margin: 14px;
+        overflow: auto;
+
+
+      }
+
+      .leftimg {
+
+        max-width: 100%;
+
+
+
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+
+        }
+
+        .right {
+          width: 100%;
+
+        }
+
+
+        .leftimg {
+          width: 100%;
+
+
+
+        }
+
+        .left {
+          width: 100%;
+
+
+        }
+        .container {
+        
+        max-height: 100%;
+
+       
+
+      }
+
+      .foot {
         flex-direction: column;
         text-align: center;
+        margin-top: 25px;
+
       }
-      .right {
-        min-height: 1080px;
+
+      .control {
+        text-align: center;
+        margin-top: 50px;
       }
-      .left, .right {
-        width: 100%;
-        
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="left">
-      <img src="53362a1672375312b87254f2121034908.png" alt="Image">
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <img src="53362a1672375312b87254f2121034908.png" alt="Image" class="leftimg">
+        <div class="right, foot">
+          s s s s s s s s s s s s s s s s s s s s s s
+        </div>
+      </div>
+
+      <div class="right">
+        <p>Text goes s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s here.</p>
+
+
+
+      </div>
+
     </div>
-    <div class="right">
-      <p>Text goes s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s s s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s  s s s s s s s s s s here.</p>
-    </div>
-  </div>
-</body>
+   
+  </body>
+
 </html>
