@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Image and Div Example</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .left {
+      width: 50%;
+    }
+    .right {
+      width: 50%;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .left, .right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <img src="image.jpg" alt="Image">
+    </div>
+    <div class="right">
+      <p>Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.Text goes here.</p>
+    </div>
+  </div>
+</body>
+</html>
